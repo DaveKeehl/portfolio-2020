@@ -1,4 +1,10 @@
 footer {
   color: $white;
   background: $blue;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

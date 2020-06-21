@@ -1,24 +1,24 @@
 import React from "react"
 
+import Container from "../Container"
+
 function Contact() {
   return (
     <div className="contact">
-      <h1>Let's talk.</h1>
-      <form>
-        <label>
-          Full name
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Email
-          <input type="text" name="email" />
-        </label>
-        <label>
-          Subject
-          <input type="text" name="subject" />
-        </label>
-        <textarea />
-      </form>
+      <Container>
+        <h1>Let's talk.</h1>
+        <form>
+          <label htmlFor="name">Full name</label>
+          <input id="name" type="text" name="name" />
+          <label htmlFor="email">Email</label>
+          <input id="email" type="text" name="email" />
+          <label htmlFor="subject">Subject</label>
+          <input id="subject" type="text" name="subject" />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" />
+          <input type="submit" value="Send" />
+        </form>
+      </Container>
     </div>
   )
 }

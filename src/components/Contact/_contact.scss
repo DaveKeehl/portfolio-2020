@@ -1,4 +1,23 @@
 .contact {
   color: $white;
   background: $blue;
+
+  .container {
+    padding: 100px 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    margin: 0 auto;
+
+    textarea {
+      margin-bottom: 40px;
+    }
+
+    input:not([type="submit"]) {
+      margin-bottom: 20px;
+    }
+  }
 }

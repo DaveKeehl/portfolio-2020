@@ -1,19 +1,25 @@
 import React from "react"
 
+import Container from "../Container"
+
 import LogoBlack from "../../images/logo-black.svg"
 
 function Header() {
   return (
-    <header>
-      <a href="/">
-        <img src={LogoBlack} alt="Logo" />
-      </a>
-      <nav>
-        <p>ABOUT ME</p>
-        <p>PROJECTS</p>
-        <p>CONTACT</p>
-      </nav>
-    </header>
+    <Container>
+      <header>
+        <a href="/">
+          <img src={LogoBlack} alt="Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>ABOUT ME</li>
+            <li>PROJECTS</li>
+            <li>CONTACT</li>
+          </ul>
+        </nav>
+      </header>
+    </Container>
   )
 }
 

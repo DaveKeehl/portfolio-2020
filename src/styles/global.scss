@@ -5,7 +5,11 @@ $blue: #2548ff;
 $pink: #ed39d1;
 $orange: #ff7a00;
 
+@import "../components/Container/container";
+@import "../components/Header/header";
+@import "../components/Hero/hero";
 @import "../components/About/about";
+@import "../components/Projects/projects";
 @import "../components/Contact/contact";
 @import "../components/Footer/footer";
 
@@ -26,4 +30,14 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
 }

@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    display: flex;
+  }
+
+  nav ul {
+    display: flex;
+
+    li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

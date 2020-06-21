@@ -1,4 +1,32 @@
 .about {
   color: $white;
   background: $blue;
+  padding: 100px 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    &__info {
+      text-align: right;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        li {
+          background: tomato;
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
 }
