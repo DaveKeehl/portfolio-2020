@@ -1,0 +1,29 @@
+$white: white;
+$black: black;
+$whitesmoke: #ededed;
+$blue: #2548ff;
+$pink: #ed39d1;
+$orange: #ff7a00;
+
+@import "../components/About/about";
+@import "../components/Contact/contact";
+@import "../components/Footer/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: $whitesmoke;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

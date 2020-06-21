@@ -1,12 +1,12 @@
 import React from "react"
 
-import logo from "../../images/logo.svg"
+import LogoBlack from "../../images/logo-black.svg"
 
 function Header() {
   return (
     <header>
       <a href="/">
-        <img src={logo} alt="Logo" />
+        <img src={LogoBlack} alt="Logo" />
       </a>
       <nav>
         <p>ABOUT ME</p>

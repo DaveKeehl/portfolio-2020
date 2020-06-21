@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "value_proposition": "Turning your ideas into products,\nand your users into clients.",
+    "features": "Davide Ciulla,\nUI/UX Designer and Front-End Web Developer."
+  },
+  "about": {
+    "bio": "My name is Davide Ciulla, and I am a UI/UX designer and Front-End Web Developer based in Lugano (Switzerland).\n\nI have a creative mind, I am very goal-oriented and I like helping people achieving their goals.\n\nI have degrees in Computer Science and Visual Design.",
+    "skills": [
+      "HTML",
+      "(S)CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "jQuery",
+      "Worpress"
+    ],
+    "languages": ["English", "Italian"],
+    "socials": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/davekeehl/"
+      },
+      {
+        "name": "Dribble",
+        "url": "https://dribbble.com/davekeehl/about"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/DaveKeehl"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/davide-ciulla/"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "USIGeek",
+      "short_description": "Website I made for USIGeek, a student association of the Università della Svizzera italiana (USI).",
+      "long_description": "",
+      "technologies": ["React", "Sass"],
+      "url": "https://usigeek.netlify.app/"
+    },
+    {
+      "name": "Stack and Heap",
+      "short_description": "Educational web-based graphical editor for stack and heap diagrams. This was the project for my Bachelor thesis.",
+      "long_description": "",
+      "technologies": ["React", "Sass"],
+      "url": "https://stackandheap.netlify.app/"
+    },
+    {
+      "name": "Laboratorio Cati",
+      "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas enim volutpat facilisi odio. Dolor sapien volutpat.",
+      "long_description": "",
+      "technologies": ["CSS", "Wordpress"],
+      "url": "https://new.laboratoriocucina.ch/"
+    },
+    {
+      "name": "Swiss-APO",
+      "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas enim volutpat facilisi odio. Dolor sapien volutpat.",
+      "long_description": "",
+      "technologies": ["HTML", "CSS", "Wordpress"],
+      "url": "https://www.swiss-apo.ch"
+    }
+  ]
+}
