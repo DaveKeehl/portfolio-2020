@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import Container from "../Container"
+import Container from "../Container";
 
-import LogoWhite from "../../images/logo-white.svg"
+import LogoWhite from "../../images/logo-white.svg";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
         <p>© Davide Ciulla. All Rights Reserved</p>
       </Container>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

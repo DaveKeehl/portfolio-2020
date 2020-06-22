@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Davide Ciulla - Portfolio`,
+    description: `Hi, my name is Davide Ciulla and I am a UI/UX Design and Front-End Web Developer based in Ticino (Switzerland).`,
+    author: `Davide Ciulla`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Davide Ciulla - Portfolio`,
+        short_name: `Davide Ciulla`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -32,4 +32,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

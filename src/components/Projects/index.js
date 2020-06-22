@@ -1,42 +1,65 @@
-import React from "react"
+import React, { useState, useEffect, useRef, createRef } from "react"
 
 import Container from "../Container"
 
 import json from "../../../static/content.json"
+import usigeek from "../../images/usigeek.svg"
+import stackandheap from "../../images/stackandheap.svg"
+import laboratorio from "../../images/laboratorio.svg"
+import swissapo from "../../images/swissapo.svg"
 
 function Projects() {
-  const cards = json.projects.map(project => {
-    return (
-      <div key={project.name} className="projects__cards__card">
-        <img
-          className="projects__cards__card__thumbnail"
-          src={`../../images/${project.name.toLowerCase()}.${/svg|png/}`}
-          alt={project.name}
-        />
-        <div className="projects__cards__card__content">
-          <h2>{project.name}</h2>
-          <p>{project.short_description}</p>
-          <button>Read more</button>
-        </div>
-      </div>
-    )
-  })
+	const [filterCategory, setFilterCategory] = useState("ALL")
 
-  return (
-    <Container>
-      <div className="projects">
-        <h1>Projects.</h1>
-        <ul className="projects__filter">
-          <li className="projects__filter__item projects__filter__item--active">
-            ALL
-          </li>
-          <li className="projects__filter__item">UI/UX</li>
-          <li className="projects__filter__item">WEB</li>
-        </ul>
-        <div className="projects__cards">{cards}</div>
-      </div>
-    </Container>
-  )
+	const cards = json.projects
+		.filter(
+			(project) =>
+				filterCategory === "ALL" ||
+				project.categories.includes(filterCategory)
+		)
+		.map((project, index) => {
+			const name = project.name
+				.trim()
+				.replace(/ /g, "")
+				.replace(/[-_]/g, "")
+				.toLowerCase()
+			const image = { usigeek, stackandheap, laboratorio, swissapo }
+			return (
+				<div key={index} className="projects__cards__card">
+					<div className={`projects__cards__card__thumbnail ${name}`}>
+						<img src={image[name]} alt={project.name} />
+					</div>
+					<div className="projects__cards__card__content">
+						<h2>{project.name}</h2>
+						<p>{project.short_description}</p>
+						<button>Read more</button>
+					</div>
+				</div>
+			)
+		})
+
+	return (
+		<Container>
+			<div className="projects" id="projects">
+				<h1>Projects.</h1>
+				<div className="projects__filter">
+					{["ALL", "UI/UX", "WEB"].map((name, index) => (
+						<button
+							key={index}
+							className={`
+								projects__filter__item 
+								${filterCategory === name ? "projects__filter__item--active" : ""}
+							`}
+							onClick={() => setFilterCategory(name)}
+						>
+							{name}
+						</button>
+					))}
+				</div>
+				<div className="projects__cards">{cards}</div>
+			</div>
+		</Container>
+	)
 }
 
 export default Projects

@@ -3,34 +3,52 @@
   background: $blue;
   padding: 100px 0;
 
+  *:not(h1) {
+    font-weight: 500;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 100px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
 
     &__bio {
       p {
         margin-bottom: 40px;
+        white-space: pre-line;
+        font-size: 22px;
       }
 
       button {
         color: $blue;
         border-radius: 5px;
         padding: 5px 15px;
+        font-family: "Poppins";
+        font-size: 18px;
       }
     }
 
     &__info {
-      text-align: right;
+      @media screen and (min-width: 768px) {
+        text-align: right;
+      }
 
       h2 {
         margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: bold;
       }
 
       ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        @media screen and (min-width: 768px) {
+          justify-content: flex-end;
+        }
         margin: -2.5px;
 
         li {

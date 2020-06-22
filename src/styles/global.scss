@@ -1,9 +1,29 @@
-$white: white;
-$black: black;
+// ========================================================
+// VARIABLES
+// ========================================================
+
+// COLORS
+
+$white     : white;
+$black     : black;
 $whitesmoke: #ededed;
-$blue: #2548ff;
-$pink: #ed39d1;
-$orange: #ff7a00;
+$blue      : #2548ff;
+$pink      : #ed39d1;
+$orange    : #ff7a00;
+
+// TYPOGRAPHY
+
+$main-font : "Poppins";
+
+// BREAKPOINTS
+
+$tablet    : 768px;
+$laptop    : 1024px;
+$laptop-l  : 1440px;
+
+// ========================================================
+// PARTIALS IMPORTS
+// ========================================================
 
 @import "../components/Container/container";
 @import "../components/Header/header";
@@ -12,6 +32,10 @@ $orange: #ff7a00;
 @import "../components/Projects/projects";
 @import "../components/Contact/contact";
 @import "../components/Footer/footer";
+
+// ========================================================
+// GLOBAL STYLES
+// ========================================================
 
 * {
   margin: 0;
@@ -24,7 +48,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   background: $whitesmoke;
-  font-family: "Poppins";
+  font-family: $main-font;
 }
 
 a {
