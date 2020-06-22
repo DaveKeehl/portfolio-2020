@@ -1,7 +1,41 @@
 .hero {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-  h1 {
+  &__value {
     text-align: left;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    white-space: pre;
+  }
+
+  &__feature {
+    white-space: pre;
+    margin-bottom: 40px;
+
+    span {
+      color: $blue;
+    }
+  }
+
+  &__cta {
+    background: $blue;
+    color: $white;
+    border-radius: 5px;
+    padding: 6px 18px;
+    width: max-content;
+  }
+
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	align-self: flex-start;
+	margin-top: 120px;
+	
+	p {
+		margin-bottom: 20px;
+	}
   }
 }

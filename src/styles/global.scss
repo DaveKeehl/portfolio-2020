@@ -37,7 +37,15 @@ ol {
   list-style: none;
 }
 
+button,
+input,
+textarea {
+  border: 0;
+  outline: none;
+}
+
 h1 {
+  font-size: 50px;
   text-align: center;
   margin-bottom: 50px;
 }

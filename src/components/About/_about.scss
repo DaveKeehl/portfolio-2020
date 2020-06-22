@@ -8,23 +8,45 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 
+    &__bio {
+      p {
+        margin-bottom: 40px;
+      }
+
+      button {
+        color: $blue;
+        border-radius: 5px;
+        padding: 5px 15px;
+      }
+    }
+
     &__info {
       text-align: right;
+
+      h2 {
+        margin-bottom: 20px;
+      }
 
       ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        margin: -2.5px;
 
         li {
-          background: tomato;
-          &:not(:last-child) {
-            margin-right: 5px;
-          }
+          background: transparentize($white, 0.8);
+          border-radius: 3px;
+          padding: 5px 7px;
+          margin: 2.5px;
         }
 
         &:not(:last-of-type) {
           margin-bottom: 30px;
+        }
+
+        &:last-of-type li {
+          background: $white;
+          color: $blue;
         }
       }
     }

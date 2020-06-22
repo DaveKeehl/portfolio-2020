@@ -12,7 +12,7 @@ function Hero() {
         <h1 className="hero__value">{json.hero.value_proposition}</h1>
         <p className="hero__feature">{json.hero.features}</p>
         <button className="hero__cta">See my projects</button>
-        <div>
+        <div className="hero__scroll">
           <p>SCROLL DOWN</p>
           <img src={arrow} alt="scroll down to see more" />
         </div>
