@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 
 import Container from "../Container"
+import Project from "./Project"
 
 import json from "../../../static/content.json"
 import usigeek from "../../images/usigeek.svg"
@@ -25,38 +26,17 @@ function Projects() {
 				.toLowerCase()
 			const image = { usigeek, stackandheap, cucinanaturale, swissapo }
 			return (
-				<div
+				<Project
 					key={index}
-					className="projects__cards__card"
-					data-sal="fade"
-					data-sal-duration="800"
-					data-sal-delay="100"
-					data-sal-easing="ease"
-				>
-					<div className={`projects__cards__card__thumbnail ${name}`}>
-						<img src={image[name]} alt={project.name} />
-						<div className="projects__cards__card__labels">
-							{project.categories.map((category) => {
-								const cleanCategory = category
-									.split("/")[0]
-									.toLowerCase()
-								return (
-									<span
-										key={cleanCategory}
-										className={`projects__cards__card__labels__${cleanCategory}`}
-									>
-										{category}
-									</span>
-								)
-							})}
-						</div>
-					</div>
-					<div className="projects__cards__card__content">
-						<h2>{project.name}</h2>
-						<p>{project.short_description}</p>
-						<button>Read more</button>
-					</div>
-				</div>
+					projectImage={image[name]}
+					cleanName={name}
+					projectName={project.name}
+					projectDescription={project.description}
+					projectCategories={project.categories}
+					projectTechnologies={project.technologies}
+					projectUrl={project.url}
+					projectRepository={project.repository}
+				/>
 			)
 		})
 

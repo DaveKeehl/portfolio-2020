@@ -9,7 +9,7 @@ import arrow from "../../images/arrow.svg"
 function Hero() {
 	return (
 		<Container>
-			<div className="hero">
+			<div className="hero" id="hero">
 				<div className="hero__main">
 					<h1 className="hero__value">
 						{json.hero.value_proposition}
@@ -25,7 +25,10 @@ function Hero() {
 						See my projects
 					</button>
 				</div>
-				<div className="hero__scroll">
+				<div
+					className="hero__scroll"
+					onClick={() => scrollTo("#about")}
+				>
 					<p>SCROLL DOWN</p>
 					<img src={arrow} alt="scroll down to see more" />
 				</div>

@@ -14,8 +14,11 @@ header {
 		font-weight: bold;
 
 		li {
+			transition: color 0.2s;
+
 			&:hover {
 				cursor: pointer;
+				color: $blue;
 			}
 
 			&:last-child {

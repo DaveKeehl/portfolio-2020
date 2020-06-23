@@ -1,6 +1,7 @@
 .about {
 	color: $white;
-	background: $blue;
+	// background: $blue;
+	background: linear-gradient(135deg, $lighter-blue, $blue);
 	padding: 100px 0;
 
 	h1 {
@@ -87,6 +88,7 @@
 
 					&:hover {
 						opacity: 0.8;
+						cursor: pointer;
 					}
 				}
 			}

@@ -38,34 +38,34 @@
 	"projects": [
 		{
 			"name": "USIGeek",
-			"short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas enim volutpat facilisi odio. Dolor sapien volutpat.",
-			"long_description": "",
+			"description": "USIGeek is a student association of the Università della Svizzera italiana (USI) with the goal of sharing passions and interests about entartainment and technology.\nI created this website completely spontaneously because I wanted to put my React skills to practice with some new topics I had just learned, and I didn't like their previous platform.\nI'm really happy with how it turned out, especially because it's the first time I make a multi-language website from scratch using a non-monolithic approach.",
 			"technologies": ["React", "Sass"],
 			"url": "https://usigeek.netlify.app/",
+			"repository": "https://github.com/DaveKeehl/usigeek",
 			"categories": ["UI/UX", "WEB"]
 		},
 		{
 			"name": "Stack and Heap",
-			"short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas enim volutpat facilisi odio. Dolor sapien volutpat.",
-			"long_description": "",
+			"description": "USIGeek is a student association of the Università della Svizzera italiana (USI) with the goal of sharing passions and interests about entartainment and technology.\nI created this website completely spontaneously because I wanted to put my React skills to practice with some new topics I had just learned, and I didn't like their previous platform.\nI'm really happy with how it turned out, especially because it's the first time I make a multi-language website from scratch using a non-monolithic approach.",
 			"technologies": ["React", "Sass"],
 			"url": "https://stackandheap.netlify.app/",
+			"repository": "https://github.com/DaveKeehl/shd-editor",
 			"categories": ["UI/UX", "WEB"]
 		},
 		{
 			"name": "Cucina naturale",
-			"short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas enim volutpat facilisi odio. Dolor sapien volutpat.",
-			"long_description": "",
+			"description": "The \"Laboratorio di Cucina Naturale\" is a food catering service which specializes in natural and mediterrian food. I was hired to develop a new website and their brief was to make something nicer than their old website, but also easily manageable and with an ecommerce.\nIn these cases, I always go with Wordpress, because it's a CMS I know quite well, and which is perfect for such situations.",
 			"technologies": ["CSS", "Wordpress"],
 			"url": "https://new.laboratoriocucina.ch/",
+			"repository": "",
 			"categories": ["UI/UX", "WEB"]
 		},
 		{
 			"name": "Swiss-APO",
-			"short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas enim volutpat facilisi odio. Dolor sapien volutpat.",
-			"long_description": "",
+			"description": "SwissAPO stands for Swiss Association of Professional Organizers, and they are the largest team of professional organizers in Switzerland.\nThey hired me to develop their new website and their main concern was to have a more fresh and easy on the eyes user interface, elements that lacked in the previous platform.\nDuring development, I used a very simple tech stack because they wanted to keep everything very simple along with the ability of being able to manage their own content via a CMS (Content Management System).",
 			"technologies": ["HTML", "CSS", "Wordpress"],
 			"url": "https://www.swiss-apo.ch",
+			"repository": "",
 			"categories": ["WEB"]
 		}
 	]

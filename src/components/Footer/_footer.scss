@@ -1,19 +1,17 @@
 footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: $white;
-	background: $blue;
-
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+	margin-top: 100px;
+	// background: $blue;
+	// background: linear-gradient(135deg, $lighter-blue, $blue);
 
 	img {
 		margin-bottom: 20px;
 	}
 
 	p {
-		margin-bottom: 50px;
 		text-align: center;
 	}
 }

@@ -7,6 +7,7 @@
 $white: white;
 $black: black;
 $whitesmoke: #ededed;
+$lighter-blue: #2568ff;
 $blue: #2548ff;
 $celeste: #0bbeff;
 $pink: #ed39d1;
@@ -30,10 +31,12 @@ $laptop-l: 1440px;
 // ========================================================
 
 @import "../components/Container/container";
+@import "../components/ScrollToTop/scrollToTop";
 @import "../components/Header/header";
 @import "../components/Hero/hero";
 @import "../components/About/about";
 @import "../components/Projects/projects";
+@import "../components/Projects/modal";
 @import "../components/Contact/contact";
 @import "../components/Footer/footer";
 
@@ -81,7 +84,7 @@ h1 {
 		font-size: 45px;
 	}
 
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: $mobile-m) {
 		font-size: 40px;
 	}
 }

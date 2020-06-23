@@ -1,9 +1,33 @@
 .contact {
 	color: $white;
-	background: $blue;
+	// background: $blue;
+	background: linear-gradient(135deg, $lighter-blue, $blue);
 
 	.container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
 		padding: 100px 0;
+	}
+
+	h1 {
+		@media screen and (max-width: $tablet) {
+			margin: 0;
+		}
+	}
+
+	&__plane {
+		position: absolute;
+		top: 110px;
+		left: 65%;
+
+		@media screen and (max-width: $tablet) {
+			position: relative;
+			top: initial;
+			left: initial;
+			margin: 20px 0;
+			transform: translateX(70px);
+		}
 	}
 
 	form {

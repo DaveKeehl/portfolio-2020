@@ -31,6 +31,7 @@ function About() {
 							<a
 								href="https://www.linkedin.com/in/davide-ciulla/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACygzysBWYiZd6F8Bgdv7OYXhAD02yFKzV8,1592835530052)/"
 								target="_blank"
+								rel="noopener"
 							>
 								Download my CV
 							</a>

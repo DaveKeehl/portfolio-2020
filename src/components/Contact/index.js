@@ -1,6 +1,9 @@
 import React from "react"
 
+import plane from "../../images/plane.svg"
+
 import Container from "../Container"
+import Footer from "../Footer"
 
 function Contact() {
 	return (
@@ -14,6 +17,7 @@ function Contact() {
 				>
 					Let's talk.
 				</h1>
+				<img className="contact__plane" src={plane} alt="plane" />
 				<form
 					action="https://getform.io/f/f2091374-d0ae-4441-9404-31f6c2cd97da"
 					method="POST"
@@ -32,6 +36,7 @@ function Contact() {
 					<textarea id="message" required />
 					<input type="submit" value="Send" />
 				</form>
+				<Footer />
 			</Container>
 		</div>
 	)

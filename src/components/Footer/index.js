@@ -1,18 +1,14 @@
-import React from "react";
+import React from "react"
 
-import Container from "../Container";
-
-import LogoWhite from "../../images/logo-white.svg";
+import LogoWhite from "../../images/logo-white.svg"
 
 function Footer() {
-  return (
-    <footer>
-      <Container>
-        <img src={LogoWhite} alt="Logo" />
-        <p>© Davide Ciulla. All Rights Reserved</p>
-      </Container>
-    </footer>
-  );
+	return (
+		<footer>
+			<img src={LogoWhite} alt="Logo" />
+			<p>© Davide Ciulla. All Rights Reserved</p>
+		</footer>
+	)
 }
 
-export default Footer;
+export default Footer

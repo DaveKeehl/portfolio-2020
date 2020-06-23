@@ -8,7 +8,7 @@ import LogoBlack from "../../images/logo-black.svg"
 function Header() {
 	return (
 		<Container>
-			<header>
+			<header id="header">
 				<a href="/">
 					<img src={LogoBlack} alt="Logo" />
 				</a>

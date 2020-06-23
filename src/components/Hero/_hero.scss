@@ -5,15 +5,26 @@
 	justify-content: space-evenly;
 	padding: 50px 0;
 
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: $laptop) {
 		height: 100%;
-		padding: 100px 0;
+		justify-content: center;
+		// padding: 100px 0;
 	}
+
+	// &__main {
+	// 	@media screen and (max-width: $tablet) {
+	// 		margin-top: -70px;
+	// 	}
+	// }
 
 	&__value {
 		text-align: left;
 		margin-bottom: 20px;
 		white-space: break-spaces;
+
+		@media screen and (max-width: $mobile-m) {
+			font-size: 35px;
+		}
 	}
 
 	&__feature {
@@ -53,6 +64,10 @@
 		align-self: flex-start;
 		font-size: 20px;
 		font-weight: bold;
+
+		&:hover {
+			cursor: pointer;
+		}
 
 		p {
 			margin-bottom: 10px;
