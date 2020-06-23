@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Container from "../Container"
 
@@ -17,7 +18,12 @@ function Hero() {
 						className="hero__feature"
 						dangerouslySetInnerHTML={{ __html: json.hero.features }}
 					/>
-					<button className="hero__cta">See my projects</button>
+					<button
+						className="hero__cta"
+						onClick={() => scrollTo("#projects")}
+					>
+						See my projects
+					</button>
 				</div>
 				<div className="hero__scroll">
 					<p>SCROLL DOWN</p>

@@ -1,56 +1,58 @@
 .contact {
-  color: $white;
-  background: $blue;
+	color: $white;
+	background: $blue;
 
-  .container {
-    padding: 100px 0;
-  }
+	.container {
+		padding: 100px 0;
+	}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 530px;
-    @media screen and (max-width: $tablet) {
-      width: 100%;
-    }
-    margin: 0 auto;
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 530px;
+		@media screen and (max-width: $tablet) {
+			width: 100%;
+		}
+		margin: 0 auto;
 
-    label {
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
+		label {
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
 
-    input,
-    textarea {
-      border-radius: 4px;
-      font-family: "Poppins";
-      font-size: 16px;
-      padding: 5px 10px;
-    }
+		input,
+		textarea {
+			border-radius: 4px;
+			font-family: "Poppins";
+			font-size: 16px;
+			padding: 5px 10px;
+		}
 
-    textarea {
-      $input-height: 35px;
-      margin-bottom: 40px;
-      min-width: 100%;
-      max-width: 100%;
-      min-height: $input-height * 3;
-      max-height: $input-height * 5;
-    }
+		textarea {
+			$input-height: 35px;
+			margin-bottom: 40px;
+			min-width: 100%;
+			max-width: 100%;
+			min-height: $input-height * 3;
+			max-height: $input-height * 5;
+		}
 
-    input:not([type="submit"]) {
-      margin-bottom: 20px;
-    }
+		input:not([type="submit"]) {
+			margin-bottom: 20px;
+		}
 
-    input[type="submit"] {
-      color: $blue;
-      width: max-content;
-      padding: 5px 40px;
-      align-self: center;
-      font-weight: bold;
+		input[type="submit"] {
+			color: $blue;
+			width: max-content;
+			padding: 5px 40px;
+			align-self: center;
+			font-weight: bold;
+			transition: opacity 0.2s;
 
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+			&:hover {
+				cursor: pointer;
+				opacity: 0.8;
+			}
+		}
+	}
 }

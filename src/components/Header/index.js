@@ -1,32 +1,27 @@
-import React from "react";
+import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
-import Container from "../Container";
+import Container from "../Container"
 
-import LogoBlack from "../../images/logo-black.svg";
+import LogoBlack from "../../images/logo-black.svg"
 
 function Header() {
-  return (
-    <Container>
-      <header>
-        <a href="/">
-          <img src={LogoBlack} alt="Logo" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="#about">ABOUT ME</a>
-            </li>
-            <li>
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </Container>
-  );
+	return (
+		<Container>
+			<header>
+				<a href="/">
+					<img src={LogoBlack} alt="Logo" />
+				</a>
+				<nav>
+					<ul>
+						<li onClick={() => scrollTo("#about")}>ABOUT ME</li>
+						<li onClick={() => scrollTo("#projects")}>PROJECTS</li>
+						<li onClick={() => scrollTo("#contact")}>CONTACT</li>
+					</ul>
+				</nav>
+			</header>
+		</Container>
+	)
 }
 
-export default Header;
+export default Header

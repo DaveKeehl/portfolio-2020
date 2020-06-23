@@ -1,33 +1,38 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
 
-  a {
-    display: flex;
-  }
+	a {
+		display: flex;
+	}
 
-  nav ul {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
+	nav ul {
+		display: flex;
+		align-items: center;
+		font-weight: bold;
 
-    li {
-      &:hover {
-        cursor: pointer;
-      }
+		li {
+			&:hover {
+				cursor: pointer;
+			}
 
-      &:last-child {
-        background: $blue;
-        color: $white;
-        border-radius: 5px;
-        padding: 3px 10px;
-      }
+			&:last-child {
+				background: $blue;
+				color: $white;
+				border-radius: 5px;
+				padding: 3px 10px;
+				transition: opacity 0.2s;
 
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
-    }
-  }
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
+	}
 }
