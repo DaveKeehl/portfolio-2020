@@ -57,6 +57,38 @@
 			overflow: hidden;
 			box-shadow: 0 5px 40px transparentize($black, 0.9);
 
+			&__labels {
+				display: flex;
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				z-index: 5;
+				font-family: "Roboto";
+				font-weight: 600;
+				font-size: 14px;
+				color: $white;
+
+				span {
+					padding: 4px 10px;
+					border-radius: 3px;
+					text-shadow: 0 1px 4px transparentize($black, 0.7);
+					box-shadow: 0 4px 7px transparentize($black, 0.8),
+						0 1px 3px transparentize($black, 0.75);
+
+					&:first-child {
+						margin-right: 5px;
+					}
+				}
+
+				&__ui {
+					background: $pink;
+				}
+
+				&__web {
+					background: $celeste;
+				}
+			}
+
 			&__thumbnail {
 				display: flex;
 				justify-content: center;
@@ -64,6 +96,19 @@
 				padding: 20px;
 				width: 100%;
 				height: 200px;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					background: linear-gradient(
+						to bottom,
+						transparent,
+						transparentize($black, 0.9)
+					);
+					width: 100%;
+					height: 100%;
+				}
 
 				&.usigeek {
 					background: $black;

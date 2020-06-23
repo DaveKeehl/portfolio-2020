@@ -35,6 +35,21 @@ function Projects() {
 				>
 					<div className={`projects__cards__card__thumbnail ${name}`}>
 						<img src={image[name]} alt={project.name} />
+						<div className="projects__cards__card__labels">
+							{project.categories.map((category) => {
+								const cleanCategory = category
+									.split("/")[0]
+									.toLowerCase()
+								return (
+									<span
+										key={cleanCategory}
+										className={`projects__cards__card__labels__${cleanCategory}`}
+									>
+										{category}
+									</span>
+								)
+							})}
+						</div>
 					</div>
 					<div className="projects__cards__card__content">
 						<h2>{project.name}</h2>

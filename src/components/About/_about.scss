@@ -3,6 +3,12 @@
 	background: $blue;
 	padding: 100px 0;
 
+	h1 {
+		@media screen and (max-width: $laptop) {
+			text-align: left;
+		}
+	}
+
 	*:not(h1) {
 		font-weight: 600;
 	}
@@ -21,6 +27,14 @@
 				margin-bottom: 40px;
 				white-space: pre-line;
 				font-size: 22px;
+
+				@media screen and (max-width: $laptop) {
+					font-size: 18px;
+				}
+
+				@media screen and (max-width: $tablet) {
+					font-size: 16px;
+				}
 			}
 
 			button {
@@ -41,6 +55,10 @@
 				margin-bottom: 20px;
 				font-size: 22px;
 				font-weight: bold;
+
+				@media screen and (max-width: $tablet) {
+					font-size: 20px;
+				}
 			}
 
 			ul {
