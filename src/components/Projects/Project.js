@@ -21,7 +21,7 @@ function Project(props) {
 	}
 
 	const shortenedDescription = () => {
-		return props.projectDescription.slice(0, 150).concat("...")
+		return props.projectDescription.slice(0, 100).concat("...")
 	}
 
 	return (

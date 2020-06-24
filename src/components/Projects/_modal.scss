@@ -113,7 +113,6 @@
 		span {
 			color: white;
 			font-family: Roboto;
-			font-size: 14px;
 			font-weight: 500;
 			border-radius: 3px;
 			padding: 2px 4px;
@@ -151,6 +150,7 @@
 					opacity: 1;
 				}
 				span {
+					display: block;
 					animation: tooltip 0.2s 1 forwards;
 
 					@keyframes tooltip {
@@ -178,6 +178,7 @@
 			}
 
 			span {
+				display: none;
 				position: absolute;
 				left: 50%;
 				top: -40px;
