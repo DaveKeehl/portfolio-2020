@@ -1,4 +1,8 @@
 .container {
-  width: 80%;
-  margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
+
+	@media screen and (max-width: $tablet) {
+		width: 90%;
+	}
 }

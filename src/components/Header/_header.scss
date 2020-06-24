@@ -13,6 +13,10 @@ header {
 		align-items: center;
 		font-weight: bold;
 
+		@media screen and (max-width: $tablet) {
+			font-size: 14px;
+		}
+
 		li {
 			transition: color 0.2s;
 
@@ -28,6 +32,10 @@ header {
 				padding: 3px 10px;
 				transition: opacity 0.2s;
 
+				@media screen and (max-width: $tablet) {
+					padding: 3px 7px;
+				}
+
 				&:hover {
 					opacity: 0.8;
 				}
@@ -35,6 +43,10 @@ header {
 
 			&:not(:last-child) {
 				margin-right: 20px;
+
+				@media screen and (max-width: $tablet) {
+					margin-right: 10px;
+				}
 			}
 		}
 	}
