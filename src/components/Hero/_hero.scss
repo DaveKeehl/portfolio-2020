@@ -65,6 +65,10 @@
 		font-size: 20px;
 		font-weight: bold;
 
+		@media screen and (max-width: $laptop) {
+			margin-top: 50px;
+		}
+
 		&:hover {
 			cursor: pointer;
 		}

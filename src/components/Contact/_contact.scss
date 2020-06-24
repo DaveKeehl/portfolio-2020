@@ -1,6 +1,5 @@
 .contact {
 	color: $white;
-	// background: $blue;
 	background: linear-gradient(135deg, $lighter-blue, $blue);
 
 	.container {
@@ -66,11 +65,13 @@
 		}
 
 		input[type="submit"] {
+			background: $white;
 			color: $blue;
 			width: max-content;
 			padding: 5px 40px;
 			align-self: center;
 			font-weight: bold;
+			-webkit-appearance: none
 			transition: opacity 0.2s;
 
 			&:hover {

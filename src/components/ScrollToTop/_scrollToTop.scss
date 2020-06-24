@@ -25,7 +25,9 @@
 		cursor: pointer;
 
 		img {
-			transform: translateY(-5px);
+			@media screen and (min-width: $laptop) {
+				transform: translateY(-5px);
+			}
 		}
 	}
 }

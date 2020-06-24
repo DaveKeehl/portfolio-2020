@@ -1,6 +1,5 @@
 .about {
 	color: $white;
-	// background: $blue;
 	background: linear-gradient(135deg, $lighter-blue, $blue);
 	padding: 100px 0;
 
@@ -39,6 +38,7 @@
 			}
 
 			button {
+				background: $white;
 				color: $blue;
 				border-radius: 5px;
 				padding: 5px 15px;
