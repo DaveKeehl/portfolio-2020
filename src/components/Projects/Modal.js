@@ -13,14 +13,17 @@ function Modal(props) {
 
 	return (
 		<div
-			className="modal"
-			style={
-				props.isModalOpen
-					? { display: "block", opacity: "1" }
-					: { display: "none", opacity: "0" }
-			}
+			className={`modal ${
+				props.isModalOpen ? "modal--open" : "modal--close"
+			}`}
 		>
-			<aside>
+			<aside
+				style={
+					props.isModalOpen
+						? { animationName: "sidebarSlideIn" }
+						: { animationName: "sidebarSlideOut" }
+				}
+			>
 				<div className="modal__top">
 					<div className="modal__categories">
 						{props.data.projectCategories.map((category) => {
@@ -81,6 +84,11 @@ function Modal(props) {
 			</aside>
 			<div
 				className="modal__background"
+				style={
+					props.isModalOpen
+						? { animationName: "bgFadeIn" }
+						: { animationName: "bgFadeOut" }
+				}
 				onClick={() => props.closeModal()}
 			></div>
 		</div>

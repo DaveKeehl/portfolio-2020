@@ -1,11 +1,12 @@
 module.exports = {
 	siteMetadata: {
-		title: `Davide Ciulla - Portfolio`,
+		title: `Davide Ciulla`,
 		description: `Hi, my name is Davide Ciulla and I am a UI/UX Design and Front-End Web Developer based in Ticino (Switzerland).`,
 		author: `Davide Ciulla`,
 		siteUrl: `https://davideciulla.com`
 	},
 	plugins: [
+		`gatsby-plugin-offline`,
 		`gatsby-plugin-robots-txt`,
 		`gatsby-plugin-sitemap`,
 		// `gatsby-plugin-scroll-reveal`,
@@ -40,13 +41,25 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Davide Ciulla - Portfolio`,
+				name: `Davide Ciulla`,
 				short_name: `Davide Ciulla`,
 				start_url: `/`,
-				background_color: `#663399`,
-				theme_color: `#663399`,
+				background_color: `#2548FF`,
+				theme_color: `#2548FF`,
 				display: `minimal-ui`,
-				icon: `src/images/favicon.png` // This path is relative to the root of the site.
+				icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+				icons: [
+					{
+						src: `/favicons/android-chrome-192x192.png`,
+						sizes: `192x192`,
+						type: `image/png`
+					},
+					{
+						src: `/favicons/android-chrome-512x512.png`,
+						sizes: `512x512`,
+						type: `image/png`
+					}
+				]
 			}
 		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality

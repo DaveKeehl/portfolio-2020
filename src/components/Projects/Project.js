@@ -21,11 +21,7 @@ function Project(props) {
 	}
 
 	const shortenedDescription = () => {
-		let cutSentence = props.projectDescription.split("").slice(0, 150)
-		for (let i = 0; i <= 2; i++) {
-			cutSentence[cutSentence.length - 1 - i] = "."
-		}
-		return cutSentence.join("")
+		return props.projectDescription.slice(0, 150).concat("...")
 	}
 
 	return (
