@@ -33,7 +33,7 @@ function About() {
 								target="_blank"
 								rel="noopener"
 							>
-								Download my CV
+								Take a look at my CV
 							</a>
 						</button>
 					</div>
