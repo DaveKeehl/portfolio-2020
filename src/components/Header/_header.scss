@@ -6,6 +6,12 @@ header {
 
 	a {
 		display: flex;
+
+		img {
+			@media screen and (max-width: $mobile-l) {
+				width: 50px;
+			}
+		}
 	}
 
 	nav ul {
@@ -13,7 +19,7 @@ header {
 		align-items: center;
 		font-weight: bold;
 
-		@media screen and (max-width: $tablet) {
+		@media screen and (max-width: $mobile-l) {
 			font-size: 14px;
 		}
 
@@ -32,7 +38,7 @@ header {
 				padding: 3px 10px;
 				transition: opacity 0.2s;
 
-				@media screen and (max-width: $tablet) {
+				@media screen and (max-width: $mobile-l) {
 					padding: 3px 7px;
 				}
 
@@ -44,7 +50,7 @@ header {
 			&:not(:last-child) {
 				margin-right: 20px;
 
-				@media screen and (max-width: $tablet) {
+				@media screen and (max-width: $mobile-l) {
 					margin-right: 10px;
 				}
 			}

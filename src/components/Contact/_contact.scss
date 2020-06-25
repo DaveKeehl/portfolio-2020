@@ -1,6 +1,7 @@
 .contact {
 	color: $white;
 	background: linear-gradient(135deg, $lighter-blue, $blue);
+	overflow: hidden;
 
 	.container {
 		display: flex;
