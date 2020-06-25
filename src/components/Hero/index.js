@@ -9,7 +9,7 @@ import arrow from "../../images/arrow.svg"
 import circle from "../../images/circle.svg"
 import rectangle from "../../images/rectangle.svg"
 import triangle from "../../images/triangle.svg"
-import dave from "../../images/dave.jpg"
+import dave from "../../images/dave.png"
 
 function Hero() {
 	const [ref, inView, entry] = useInView({})
@@ -40,8 +40,8 @@ function Hero() {
 						alt="triangle"
 					/>
 					<div className="hero__shapes__dave">
-						<img src={dave} alt="dave" />
-						<img src={dave} alt="dave" />
+						<img src={dave} alt="dave" crossOrigin="anonymous" />
+						<img src={dave} alt="dave" crossOrigin="anonymous" />
 					</div>
 				</div>
 				<div className="hero__main">
