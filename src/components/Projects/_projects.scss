@@ -65,8 +65,11 @@
 				z-index: 5;
 				font-family: "Roboto";
 				font-weight: 600;
-				// font-size: 14px;
 				color: $white;
+
+				@media screen and (min-width: $tablet) {
+					font-size: 14px;
+				}
 
 				span {
 					padding: 4px 10px;
@@ -145,6 +148,10 @@
 
 				p {
 					color: transparentize($black, 0.5);
+
+					@media screen and (min-width: $tablet) {
+						font-size: 14px;
+					}
 				}
 
 				button {
@@ -155,6 +162,10 @@
 					font-family: $main-font;
 					font-size: 18px;
 					font-weight: 600;
+
+					@media screen and (min-width: $tablet) {
+						font-size: 16px;
+					}
 
 					&:hover {
 						cursor: pointer;
