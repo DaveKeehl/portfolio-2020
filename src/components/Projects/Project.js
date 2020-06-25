@@ -1,22 +1,17 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
 
 import Modal from "./Modal"
-import { ExclusiveWindowContext } from "../../contexts/exclusiveWindowContext"
 
 function Project(props) {
 	const [isModalOpen, setIsModalOpen] = useState(false)
 
-	const { setIsExclusiveWindowOpen } = useContext(ExclusiveWindowContext)
-
 	const openModal = () => {
 		setIsModalOpen(true)
-		setIsExclusiveWindowOpen(true)
 		document.querySelector("body").style.overflow = "hidden"
 	}
 
 	const closeModal = () => {
 		setIsModalOpen(false)
-		setIsExclusiveWindowOpen(false)
 		document.querySelector("body").style.overflow = ""
 	}
 
