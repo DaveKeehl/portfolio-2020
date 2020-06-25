@@ -7,16 +7,8 @@ import Footer from "../Footer"
 
 function Contact() {
 	return (
-		<div className="contact">
+		<div className="contact" id="contact">
 			<Container>
-				<div
-					id="contact"
-					style={{
-						position: "absolute",
-						top: "50px",
-						opacity: "0"
-					}}
-				></div>
 				<h1
 					data-sal="fade"
 					data-sal-duration="800"
@@ -35,36 +27,13 @@ function Contact() {
 					data-sal-easing="ease"
 				>
 					<label htmlFor="name">Full name</label>
-					<input
-						id="name"
-						type="text"
-						name="name"
-						placeholder="e.g. John Doe"
-						required
-					/>
+					<input id="name" type="text" name="name" required />
 					<label htmlFor="email">Email</label>
-					<input
-						id="email"
-						type="text"
-						name="email"
-						placeholder="e.g. john-doe@email.com"
-						required
-					/>
+					<input id="email" type="text" name="email" required />
 					<label htmlFor="subject">Subject</label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="e.g. I have an idea for an app"
-						required
-					/>
+					<input id="subject" type="text" name="subject" required />
 					<label htmlFor="message">Message</label>
-					<textarea
-						id="message"
-						name="text"
-						placeholder="e.g. Hi, my name is John Doe. I was thinking..."
-						required
-					/>
+					<textarea id="message" name="text" required />
 					<input type="submit" value="Send" />
 				</form>
 				<Footer />

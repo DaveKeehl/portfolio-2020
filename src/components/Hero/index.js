@@ -1,5 +1,6 @@
 import React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import { useInView } from "react-intersection-observer"
 
 import Container from "../Container"
 
@@ -11,13 +12,33 @@ import triangle from "../../images/triangle.svg"
 import dave from "../../images/dave.jpg"
 
 function Hero() {
+	const [ref, inView, entry] = useInView({})
+
 	return (
 		<Container>
-			<div className="hero" id="hero">
+			<div ref={ref} className="hero" id="hero">
 				<div className="hero__shapes">
-					<img src={circle} alt="circle" />
-					<img src={rectangle} alt="rectangle" />
-					<img src={triangle} alt="triangle" />
+					<img
+						className={`hero__shapes__circle ${
+							inView ? "animation" : ""
+						}`}
+						src={circle}
+						alt="circle"
+					/>
+					<div className="hero__shapes__rectangle">
+						<img
+							className={`${inView ? "animation" : ""}`}
+							src={rectangle}
+							alt="rectangle"
+						/>
+					</div>
+					<img
+						className={`hero__shapes__triangle ${
+							inView ? "animation" : ""
+						}`}
+						src={triangle}
+						alt="triangle"
+					/>
 					<div className="hero__shapes__dave">
 						<img src={dave} alt="dave" />
 						<img src={dave} alt="dave" />

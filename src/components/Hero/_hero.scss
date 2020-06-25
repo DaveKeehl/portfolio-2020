@@ -9,11 +9,14 @@
 	@media screen and (max-width: $laptop) {
 		height: 100%;
 		justify-content: center;
-		// padding: 100px 0;
+	}
+
+	@media screen and (min-width: $tablet) and (max-width: $laptop) {
+		padding: 100px 0;
 	}
 
 	&__shapes {
-		@media screen and (max-width: $laptop) {
+		@media screen and (max-width: $tablet) {
 			display: none;
 		}
 
@@ -21,17 +24,126 @@
 			position: absolute;
 		}
 
-		[alt="circle"] {
-			top: 50px;
-			filter: drop-shadow(-5px -5px 20px transparentize($celeste, 0.7));
+		$shapes-shadow-amount: 0.3;
+
+		&__circle {
+			top: 13%;
+			left: 25%;
+			filter: drop-shadow(
+				-5px -5px 20px
+					transparentize($celeste, 1 - $shapes-shadow-amount)
+			);
+
+			@media screen and (max-width: $laptop) {
+				top: 5%;
+			}
+
+			&.animation {
+				animation: circleAnimation 8s infinite
+					cubic-bezier(1, 0.17, 0.01, 0.83);
+
+				@keyframes circleAnimation {
+					0% {
+						transform: scale(1);
+					}
+					16.66% {
+						transform: scale(0.3);
+					}
+					33.33% {
+						transform: scale(0.8);
+					}
+					50% {
+						transform: scale(1);
+					}
+					66.66% {
+						transform: scale(1.5);
+					}
+					83.33% {
+						transform: scale(0.4);
+					}
+					100% {
+						transform: scale(1);
+					}
+				}
+			}
 		}
 
-		[alt="rectangle"] {
-			filter: drop-shadow(5px -5px 20px transparentize($orange, 0.7));
+		&__rectangle {
+			top: 18%;
+			left: 80%;
+			filter: drop-shadow(
+				5px -5px 20px transparentize($orange, 1 - $shapes-shadow-amount)
+			);
+
+			@media screen and (max-width: $laptop) {
+				top: 10%;
+			}
+
+			.animation {
+				animation: rectangleAnimation 5s infinite
+					cubic-bezier(1, 0.17, 0.01, 0.83);
+
+				@keyframes rectangleAnimation {
+					0% {
+						transform: scale(1, 1);
+					}
+					20% {
+						transform: scale(0.1, 6);
+					}
+					25% {
+						transform: scale(0.1, 6);
+					}
+					45% {
+						transform: scale(1, 1);
+					}
+					50% {
+						transform: scale(1, 1);
+					}
+					70% {
+						transform: scale(2, 0.5);
+					}
+					75% {
+						transform: scale(2, 0.5);
+					}
+					95% {
+						transform: scale(1, 1);
+					}
+					100% {
+						transform: scale(1, 1);
+					}
+				}
+			}
 		}
 
-		[alt="triangle"] {
-			filter: drop-shadow(0 5px 20px transparentize($pink, 0.7));
+		&__triangle {
+			top: 70%;
+			left: 35%;
+			filter: drop-shadow(
+				0 5px 20px transparentize($pink, 1 - $shapes-shadow-amount)
+			);
+
+			&.animation {
+				animation: triangleAnimation 3s infinite
+					cubic-bezier(0.68, 0.01, 0.24, 1.02);
+
+				@keyframes triangleAnimation {
+					0% {
+						transform: translateX(0);
+					}
+					40% {
+						transform: translateX(200px);
+					}
+					50% {
+						transform: translateX(200px);
+					}
+					90% {
+						transform: translateX(0);
+					}
+					100% {
+						transform: translateX(0);
+					}
+				}
+			}
 		}
 
 		&__dave img {
@@ -39,7 +151,7 @@
 			width: 220px;
 			filter: saturate(1.3);
 			transform: rotate(5deg);
-			top: 200px;
+			top: 220px;
 			left: 800px;
 
 			&:first-child {
@@ -49,6 +161,10 @@
 			&:last-child {
 				filter: saturate(1.3) blur(30px);
 				transform: translate(20px, 20px);
+			}
+
+			@media screen and (max-width: $laptop) {
+				display: none;
 			}
 		}
 	}
@@ -87,6 +203,10 @@
 		width: max-content;
 		font-size: 20px;
 		font-weight: bold;
+
+		@media screen and (max-width: $tablet) {
+			margin-bottom: 30px;
+		}
 
 		&:hover {
 			cursor: pointer;

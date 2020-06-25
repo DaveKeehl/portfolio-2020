@@ -222,14 +222,15 @@
 		margin-top: auto;
 
 		a {
-			width: max-content;
+			width: 100%;
 			font-weight: 500;
 			border-left: 3px solid transparentize($black, 0.8);
-			padding-left: 10px;
-			transition: border-color 0.2s;
+			padding: 5px 10px;
+			transition: all 0.2s;
 
 			&:hover {
 				border-color: $blue;
+				background: transparentize($blue, 0.95);
 
 				img {
 					transform: translateX(5px);
