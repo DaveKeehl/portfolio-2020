@@ -29,7 +29,7 @@ function About() {
 						/>
 						<button>
 							<a
-								href="https://www.linkedin.com/in/davide-ciulla/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACygzysBWYiZd6F8Bgdv7OYXhAD02yFKzV8,1592835530052)/"
+								href="https://drive.google.com/file/d/19JJxzh1iaoj6wfbknYc8rrxf5Pxr7k1a/view?usp=sharing"
 								target="_blank"
 								rel="noopener"
 							>

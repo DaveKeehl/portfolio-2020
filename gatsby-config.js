@@ -6,7 +6,6 @@ module.exports = {
 		siteUrl: `https://davideciulla.com`
 	},
 	plugins: [
-		`gatsby-plugin-offline`,
 		`gatsby-plugin-robots-txt`,
 		`gatsby-plugin-sitemap`,
 		// `gatsby-plugin-scroll-reveal`,
@@ -47,23 +46,9 @@ module.exports = {
 				background_color: `#2548FF`,
 				theme_color: `#2548FF`,
 				display: `minimal-ui`,
-				icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-				icons: [
-					{
-						src: `/favicons/android-chrome-192x192.png`,
-						sizes: `192x192`,
-						type: `image/png`
-					},
-					{
-						src: `/favicons/android-chrome-512x512.png`,
-						sizes: `512x512`,
-						type: `image/png`
-					}
-				]
+				icon: `src/images/favicon.png` // This path is relative to the root of the site.
 			}
-		}
-		// this (optional) plugin enables Progressive Web App + Offline functionality
-		// To learn more, visit: https://gatsby.dev/offline
-		// `gatsby-plugin-offline`,
+		}, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
+		`gatsby-plugin-offline`
 	]
 }
