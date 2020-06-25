@@ -147,7 +147,7 @@
 				}
 
 				p {
-					color: transparentize($black, 0.5);
+					color: transparentize($black, 0.45);
 
 					@media screen and (min-width: $tablet) {
 						font-size: 14px;
