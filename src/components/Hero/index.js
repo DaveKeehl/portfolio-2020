@@ -40,8 +40,8 @@ function Hero() {
 						alt="triangle"
 					/>
 					<div className="hero__shapes__dave">
-						<img src={dave} alt="dave" crossOrigin="anonymous" />
-						<img src={dave} alt="dave" crossOrigin="anonymous" />
+						<img src={dave} alt="dave" />
+						<img src={dave} alt="dave" />
 					</div>
 				</div>
 				<div className="hero__main">

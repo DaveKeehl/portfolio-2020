@@ -31,7 +31,7 @@ function About() {
 							<a
 								href="https://drive.google.com/file/d/19JJxzh1iaoj6wfbknYc8rrxf5Pxr7k1a/view?usp=sharing"
 								target="_blank"
-								rel="noopener"
+								rel="noreferrer"
 							>
 								Take a look at my CV
 							</a>

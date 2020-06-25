@@ -1,7 +1,6 @@
 import React from "react"
 
 import closeButton from "../../images/close-modal.svg"
-import modalArrow from "../../images/modal-arrow.svg"
 import react from "../../images/icons/react.svg"
 import sass from "../../images/icons/sass.svg"
 import html from "../../images/icons/html.svg"
@@ -65,7 +64,7 @@ function Modal(props) {
 					<a
 						href={props.data.projectUrl}
 						target="_blank"
-						rel="noopener"
+						rel="noreferrer"
 					>
 						{props.data.projectCategories.includes("WEB")
 							? "See live website"
@@ -75,7 +74,7 @@ function Modal(props) {
 						<a
 							href={props.data.projectRepository}
 							target="_blank"
-							rel="noopener"
+							rel="noreferrer"
 						>
 							Go to GitHub repository
 						</a>
