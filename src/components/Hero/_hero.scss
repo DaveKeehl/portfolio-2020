@@ -17,7 +17,14 @@
 
 	&__shapes {
 		@media screen and (max-width: $tablet) {
-			display: none;
+			* {
+				animation: none !important;
+				transform: scale(0.9);
+			}
+
+			&__dave {
+				display: none;
+			}
 		}
 
 		* {
@@ -36,6 +43,11 @@
 
 			@media screen and (max-width: $laptop) {
 				top: 5%;
+			}
+
+			@media screen and (max-width: $tablet) {
+				top: 0%;
+				left: 25%;
 			}
 
 			&.animation {
@@ -77,6 +89,12 @@
 
 			@media screen and (max-width: $laptop) {
 				top: 10%;
+			}
+
+			@media screen and (max-width: $tablet) {
+				top: 3%;
+				left: 75%;
+				transform: rotate(10deg);
 			}
 
 			.animation {
@@ -121,6 +139,11 @@
 			filter: drop-shadow(
 				0 5px 20px transparentize($pink, 1 - $shapes-shadow-amount)
 			);
+
+			@media screen and (max-width: $tablet) {
+				top: 85%;
+				left: 70%;
+			}
 
 			&.animation {
 				animation: triangleAnimation 3s infinite
