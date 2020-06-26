@@ -15,10 +15,6 @@ function Project(props) {
 		document.querySelector("body").style.overflow = ""
 	}
 
-	const shortenedDescription = () => {
-		return props.projectDescription.slice(0, 100).concat("...")
-	}
-
 	return (
 		<div
 			className="projects__cards__card"
@@ -49,7 +45,7 @@ function Project(props) {
 			</div>
 			<div className="projects__cards__card__content">
 				<h2>{props.projectName}</h2>
-				<p>{shortenedDescription()}</p>
+				<p>{props.projectDescription}</p>
 				<button onClick={() => openModal()}>Read more</button>
 			</div>
 			<Modal

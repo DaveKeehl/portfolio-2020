@@ -147,10 +147,28 @@
 				}
 
 				p {
+					--line-height: 21px;
+					--lines: 5;
+					position: relative;
 					color: transparentize($black, 0.45);
+					line-height: var(--line-height);
+					height: calc(var(--line-height) * var(--lines));
+					overflow: hidden;
+					background: -webkit-linear-gradient(
+						transparentize($black, 0.45) 0%,
+						transparentize($black, 0.45) 50%,
+						transparent 100%
+					);
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
 
 					@media screen and (min-width: $tablet) {
 						font-size: 14px;
+					}
+
+					@media screen and (max-width: $tablet) {
+						--line-height: 25px;
 					}
 				}
 
