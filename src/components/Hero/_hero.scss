@@ -18,6 +18,7 @@
 	&__shapes {
 		@media screen and (max-width: $tablet) {
 			* {
+				display: none;
 				animation: none !important;
 				transform: scale(0.9);
 			}
