@@ -31,7 +31,7 @@ function Contact() {
 					method="POST"
 					data-sal="fade"
 					data-sal-duration="800"
-					data-sal-delay="400"
+					data-sal-delay="200"
 					data-sal-easing="ease"
 				>
 					<label htmlFor="name">Full name</label>
