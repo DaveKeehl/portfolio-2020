@@ -16,13 +16,7 @@ function Project(props) {
 	}
 
 	return (
-		<div
-			className="projects__cards__card"
-			data-sal="fade"
-			data-sal-duration="800"
-			data-sal-delay="100"
-			data-sal-easing="ease"
-		>
+		<div className="projects__cards__card">
 			<div
 				className={`projects__cards__card__thumbnail ${props.cleanName}`}
 			>

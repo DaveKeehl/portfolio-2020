@@ -11,7 +11,7 @@ function About() {
 				<h1
 					data-sal="fade"
 					data-sal-duration="500"
-					data-sal-delay="100"
+					data-sal-delay="300"
 					data-sal-easing="ease"
 				>
 					About me.
@@ -41,7 +41,7 @@ function About() {
 						className="about__content__info"
 						data-sal="fade"
 						data-sal-duration="800"
-						data-sal-delay="500"
+						data-sal-delay="400"
 						data-sal-easing="ease"
 					>
 						<h2>SKILLS AND KNOWLEDGE</h2>

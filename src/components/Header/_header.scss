@@ -8,7 +8,7 @@ header {
 		display: flex;
 
 		img {
-			@media screen and (max-width: $mobile-l) {
+			@media screen and (max-width: $mobile-ml) {
 				width: 50px;
 			}
 		}

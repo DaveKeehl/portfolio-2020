@@ -46,7 +46,7 @@ function Projects() {
 				<h1
 					data-sal="fade"
 					data-sal-duration="800"
-					data-sal-delay="100"
+					// data-sal-delay="100"
 					data-sal-easing="ease"
 				>
 					Projects.
@@ -71,7 +71,14 @@ function Projects() {
 						</div>
 					))}
 				</div>
-				<div className="projects__cards">{cards}</div>
+				<div
+					className="projects__cards"
+					data-sal="fade"
+					data-sal-duration="600"
+					data-sal-easing="ease"
+				>
+					{cards}
+				</div>
 			</div>
 		</Container>
 	)
