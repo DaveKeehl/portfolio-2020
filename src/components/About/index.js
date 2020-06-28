@@ -21,7 +21,7 @@ function About() {
 						className="about__content__bio"
 						data-sal="fade"
 						data-sal-duration="800"
-						data-sal-delay="300"
+						data-sal-delay="100"
 						data-sal-easing="ease"
 					>
 						<p

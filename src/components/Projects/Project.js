@@ -39,7 +39,11 @@ function Project(props) {
 			</div>
 			<div className="projects__cards__card__content">
 				<h2>{props.projectName}</h2>
-				<p>{props.projectDescription}</p>
+				<p
+					dangerouslySetInnerHTML={{
+						__html: props.projectDescription
+					}}
+				/>
 				<button onClick={() => openModal()}>Read more</button>
 			</div>
 			<Modal

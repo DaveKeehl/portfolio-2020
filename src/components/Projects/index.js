@@ -62,9 +62,9 @@ function Projects() {
 							data-sal-easing="ease"
 						>
 							<button
-								className={`
-								projects__filter__item 
-								${filterCategory === name ? "active" : ""}`}
+								className={`projects__filter__item projects__filter__item__${
+									name.toLowerCase().split("/")[0]
+								} ${filterCategory === name ? "active" : ""}`}
 							>
 								{name}
 							</button>

@@ -46,7 +46,11 @@ function Modal(props) {
 					</div>
 				</div>
 				<h2>{props.data.projectName}</h2>
-				<p>{props.data.projectDescription}</p>
+				<p
+					dangerouslySetInnerHTML={{
+						__html: props.data.projectDescription
+					}}
+				/>
 				<div className="modal__technologies">
 					{props.data.projectTechnologies.map((technology) => {
 						return (
@@ -64,7 +68,7 @@ function Modal(props) {
 					<a
 						href={props.data.projectUrl}
 						target="_blank"
-						rel="noreferrer"
+						rel="noopener noreferrer"
 					>
 						{props.data.projectCategories.includes("WEB")
 							? "See live website"
@@ -74,7 +78,7 @@ function Modal(props) {
 						<a
 							href={props.data.projectRepository}
 							target="_blank"
-							rel="noreferrer"
+							rel="noopener noreferrer"
 						>
 							Go to GitHub repository
 						</a>

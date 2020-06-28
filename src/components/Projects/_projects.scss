@@ -11,7 +11,7 @@
 		font-weight: 500;
 
 		div {
-			button {
+			.projects__filter__item {
 				padding: 4px 12px;
 				border-radius: 4px;
 				background-color: $black;
@@ -29,6 +29,24 @@
 				&.active {
 					background: $blue;
 				}
+
+				// &__all {
+				// 	&.active {
+				// 		background: $blue;
+				// 	}
+				// }
+
+				// &__ui {
+				// 	&.active {
+				// 		background: $pink;
+				// 	}
+				// }
+
+				// &__web {
+				// 	&.active {
+				// 		background: $celeste;
+				// 	}
+				// }
 			}
 
 			&:hover {

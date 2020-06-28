@@ -4,7 +4,7 @@
 		"features": "Davide Ciulla,\n<span>UI<span style=\"font-family: Roboto\">/</span>UX Designer</span> and <span>Front-End Web Developer</span>."
 	},
 	"about": {
-		"bio": "My name is Davide Ciulla, and I am a UI<span style=\"font-family: Roboto\">/</span>UX designer and Front-end Web Developer based in Lugano (Switzerland).\n\nI have a creative mind, I am very goal-oriented and I like helping people achieving their goals.\n\nI have degrees in Computer Science and Visual Design.",
+		"bio": "My name is Davide Ciulla, and I am a UI<span style=\"font-family: Roboto\">/</span>UX designer and Front-End Web Developer based in Lugano (Switzerland).\n\nI have a creative mind, I am very goal-oriented and I like helping people achieving their goals.\n\nI have degrees in Computer Science and Visual Design.",
 		"skills": [
 			"HTML",
 			"(S)CSS",
@@ -46,7 +46,7 @@
 		},
 		{
 			"name": "Stack and Heap",
-			"description": "USIGeek is a student association of the Università della Svizzera italiana (USI) with the goal of sharing passions and interests about entartainment and technology.\nI created this website completely spontaneously because I wanted to put my React skills to practice with some new topics I had just learned, and I didn't like their previous platform.\nI'm really happy with how it turned out, especially because it's the first time I make a multi-language website from scratch using a non-monolithic approach.",
+			"description": "During my last year of the Bachelor of Science in Informatics at <a href=\"https://www.inf.usi.ch/en\" target=\"_blank\" rel=\"noopener noreferrer\">USI</a>, I developed as my Bachelor thesis a graphical editor that lets users (but mostly students) create stack and heap diagrams. Stack and heap are two very important memory allocation areas in computer science and are usually taught during lectures.\nThe goal of my project was to take as a starting point an application that my thesis advisor (<a href=\"https://www.inf.usi.ch/faculty/hauswirth/\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Matthias Hauswirth</a>) had built in the past and has been using during his Programming Fundamentals 2 course, and create a web application able to do the same things.\nMy application will be used during that course (instead of the old tool) starting from September 2020.",
 			"technologies": ["React", "Sass"],
 			"url": "https://stackandheap.netlify.app/",
 			"repository": "https://github.com/DaveKeehl/shd-editor",
