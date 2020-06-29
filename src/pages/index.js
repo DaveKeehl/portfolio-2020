@@ -10,6 +10,7 @@ import Contact from "../components/Contact"
 
 import "typeface-poppins"
 import "typeface-roboto"
+import "typeface-montserrat"
 
 const IndexPage = () => (
 	<>

@@ -11,6 +11,10 @@ header {
 			@media screen and (max-width: $mobile-ml) {
 				width: 50px;
 			}
+
+			@media screen and (max-width: $mobile-s) {
+				width: 40px;
+			}
 		}
 	}
 
@@ -21,6 +25,10 @@ header {
 
 		@media screen and (max-width: $mobile-l) {
 			font-size: 14px;
+		}
+
+		@media screen and (max-width: $mobile-s) {
+			font-size: 12px;
 		}
 
 		li {

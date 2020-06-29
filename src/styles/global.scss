@@ -16,7 +16,8 @@ $orange: #ff7a00;
 // TYPOGRAPHY
 
 $main-font: "Poppins";
-$fallback-font: "Roboto";
+$fallback-font: "Montserrat";
+$exception-font: "Roboto";
 
 // BREAKPOINTS
 
@@ -58,7 +59,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	background: $whitesmoke;
-	font-family: $main-font;
+	font-family: $main-font, $fallback-font, sans-serif;
 }
 
 a {

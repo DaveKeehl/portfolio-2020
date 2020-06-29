@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Davide Ciulla - UI/UX Designer and Front-end Web Developer`,
+		title: `Davide Ciulla - UI/UX Designer and Front-End Web Developer`,
 		description: `Hi, my name is Davide Ciulla and I am a UI/UX Designer and Front-End Web Developer based in Ticino (Switzerland).`,
 		author: `Davide Ciulla`,
 		siteUrl: `https://davideciulla.com`
