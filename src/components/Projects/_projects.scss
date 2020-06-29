@@ -181,6 +181,11 @@
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 
+					@media screen and (min-width: $tablet) and (max-width: $laptop) {
+						--line-height: 25px;
+						--lines: 4;
+					}
+
 					@media screen and (min-width: $laptop+1px) {
 						font-size: 14px;
 					}
