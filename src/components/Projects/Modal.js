@@ -2,13 +2,24 @@ import React from "react"
 
 import closeButton from "../../images/close-modal.svg"
 import react from "../../images/icons/react.svg"
+import gatsby from "../../images/icons/gatsby.svg"
 import sass from "../../images/icons/sass.svg"
 import html from "../../images/icons/html.svg"
 import css from "../../images/icons/css.svg"
+import javascript from "../../images/icons/javascript.svg"
+import typescript from "../../images/icons/typescript.svg"
 import wordpress from "../../images/icons/wordpress.svg"
 
 function Modal(props) {
-	const techIcons = { react, sass, html, css, wordpress }
+	const techIcons = {
+		react,
+		sass,
+		html,
+		css,
+		javascript,
+		typescript,
+		wordpress
+	}
 
 	return (
 		<div
@@ -59,7 +70,7 @@ function Modal(props) {
 									src={techIcons[technology.toLowerCase()]}
 									alt={technology}
 								/>
-								<span>{technology.toUpperCase()}</span>
+								<span>{technology}</span>
 							</div>
 						)
 					})}

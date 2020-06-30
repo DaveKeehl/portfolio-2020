@@ -42,7 +42,8 @@
 			"technologies": ["React", "Sass"],
 			"url": "https://usigeek.netlify.app/",
 			"repository": "https://github.com/DaveKeehl/usigeek",
-			"categories": ["UI/UX", "WEB"]
+			"categories": ["UI/UX", "WEB"],
+			"visibility": "public"
 		},
 		{
 			"name": "Stack and Heap",
@@ -50,7 +51,8 @@
 			"technologies": ["React", "Sass"],
 			"url": "https://stackandheap.netlify.app/",
 			"repository": "https://github.com/DaveKeehl/shd-editor",
-			"categories": ["UI/UX", "WEB"]
+			"categories": ["UI/UX", "WEB"],
+			"visibility": "public"
 		},
 		{
 			"name": "Cucina naturale",
@@ -58,7 +60,8 @@
 			"technologies": ["CSS", "Wordpress"],
 			"url": "https://new.laboratoriocucina.ch/",
 			"repository": "",
-			"categories": ["UI/UX", "WEB"]
+			"categories": ["UI/UX", "WEB"],
+			"visibility": "public"
 		},
 		{
 			"name": "Swiss-APO",
@@ -66,7 +69,17 @@
 			"technologies": ["HTML", "CSS", "Wordpress"],
 			"url": "https://www.swiss-apo.ch",
 			"repository": "",
-			"categories": ["WEB"]
+			"categories": ["WEB"],
+			"visibility": "public"
+		},
+		{
+			"name": "Rename it.",
+			"description": "...",
+			"technologies": ["React", "TypeScript", "Sass"],
+			"url": "https://renameit.netlify.app",
+			"repository": "https://github.com/DaveKeehl/rename-it",
+			"categories": ["UI/UX", "WEB"],
+			"visibility": "public"
 		}
 	]
 }

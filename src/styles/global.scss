@@ -88,9 +88,9 @@ h1 {
 		font-size: 60px;
 	}
 
-	@media screen and (max-width: $laptop) {
-		font-size: 45px;
-	}
+	// @media screen and (max-width: $tablet - 1px) {
+	// 	font-size: 45px;
+	// }
 
 	@media screen and (max-width: $mobile-m) {
 		font-size: 40px;

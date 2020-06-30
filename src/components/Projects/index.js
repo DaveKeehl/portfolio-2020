@@ -25,19 +25,23 @@ function Projects() {
 				.replace(/[-_]/g, "")
 				.toLowerCase()
 			const image = { usigeek, stackandheap, cucinanaturale, swissapo }
-			return (
-				<Project
-					key={index}
-					projectImage={image[name]}
-					cleanName={name}
-					projectName={project.name}
-					projectDescription={project.description}
-					projectCategories={project.categories}
-					projectTechnologies={project.technologies}
-					projectUrl={project.url}
-					projectRepository={project.repository}
-				/>
-			)
+			if (project.visibility === "public") {
+				return (
+					<Project
+						key={index}
+						projectImage={image[name]}
+						cleanName={name}
+						projectName={project.name}
+						projectDescription={project.description}
+						projectCategories={project.categories}
+						projectTechnologies={project.technologies}
+						projectUrl={project.url}
+						projectRepository={project.repository}
+					/>
+				)
+			} else {
+				return
+			}
 		})
 
 	return (
