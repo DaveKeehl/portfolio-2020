@@ -79,7 +79,7 @@
 			"url": "https://renameit.netlify.app",
 			"repository": "https://github.com/DaveKeehl/rename-it",
 			"categories": ["UI/UX", "WEB"],
-			"visibility": "public"
+			"visibility": ""
 		}
 	]
 }
