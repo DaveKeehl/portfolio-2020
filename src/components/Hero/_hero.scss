@@ -6,7 +6,7 @@
 	justify-content: space-evenly;
 	padding: 50px 0;
 
-	@media screen and (max-width: $laptop) and (max-height: $laptop - 1px) {
+	@media screen and (max-width: $laptop) and (max-height: $tablet) {
 		height: 100%;
 		justify-content: center;
 	}
@@ -251,6 +251,14 @@
 			margin-top: 50px;
 		}
 
+		@media screen and (max-width: $tablet) {
+			display: none;
+		}
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+			display: block;
+		}
+
 		&:hover {
 			cursor: pointer;
 		}
@@ -277,10 +285,6 @@
 			100% {
 				transform: translateY(0);
 			}
-		}
-
-		@media screen and (max-width: $tablet) and (max-height: $laptop - 1px) {
-			display: none;
 		}
 	}
 }
