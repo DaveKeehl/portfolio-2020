@@ -15,9 +15,9 @@ $orange: #ff7a00;
 
 // TYPOGRAPHY
 
-$main-font: "Poppins";
-$fallback-font: "Montserrat";
-$exception-font: "Roboto";
+$main-font: 'Poppins';
+$fallback-font: 'Montserrat';
+$exception-font: 'Roboto';
 
 // BREAKPOINTS
 
@@ -34,15 +34,16 @@ $widescreen: 1920px;
 // PARTIALS IMPORTS
 // ========================================================
 
-@import "../components/Container/container";
-@import "../components/ScrollToTop/scrollToTop";
-@import "../components/Header/header";
-@import "../components/Hero/hero";
-@import "../components/About/about";
-@import "../components/Projects/projects";
-@import "../components/Projects/modal";
-@import "../components/Contact/contact";
-@import "../components/Footer/footer";
+@import '../components/NotFound/404';
+@import '../components/Container/container';
+@import '../components/ScrollToTop/scrollToTop';
+@import '../components/Header/header';
+@import '../components/Hero/hero';
+@import '../components/About/about';
+@import '../components/Projects/projects';
+@import '../components/Projects/modal';
+@import '../components/Contact/contact';
+@import '../components/Footer/footer';
 
 // ========================================================
 // GLOBAL STYLES

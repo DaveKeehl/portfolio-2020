@@ -15,7 +15,7 @@ import "typeface-montserrat"
 const IndexPage = () => (
 	<>
 		<ScrollToTop />
-		<SEO title="Home" />
+		<SEO />
 		<Header />
 		<Hero />
 		<About />

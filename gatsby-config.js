@@ -6,6 +6,7 @@ module.exports = {
 		siteUrl: `https://davideciulla.com`
 	},
 	plugins: [
+		`gatsby-plugin-netlify`,
 		`gatsby-plugin-robots-txt`,
 		`gatsby-plugin-sitemap`,
 		`gatsby-plugin-scroll-reveal`,
