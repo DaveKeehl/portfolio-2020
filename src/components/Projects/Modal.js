@@ -1,14 +1,14 @@
-import React from "react"
+import React from 'react'
 
-import closeButton from "../../images/close-modal.svg"
-import react from "../../images/icons/react.svg"
-import gatsby from "../../images/icons/gatsby.svg"
-import sass from "../../images/icons/sass.svg"
-import html from "../../images/icons/html.svg"
-import css from "../../images/icons/css.svg"
-import javascript from "../../images/icons/javascript.svg"
-import typescript from "../../images/icons/typescript.svg"
-import wordpress from "../../images/icons/wordpress.svg"
+import closeButton from '../../images/close-modal.svg'
+import react from '../../images/icons/react.svg'
+import gatsby from '../../images/icons/gatsby.svg'
+import sass from '../../images/icons/sass.svg'
+import html from '../../images/icons/html.svg'
+import css from '../../images/icons/css.svg'
+import javascript from '../../images/icons/javascript.svg'
+import typescript from '../../images/icons/typescript.svg'
+import wordpress from '../../images/icons/wordpress.svg'
 
 function Modal(props) {
 	const techIcons = {
@@ -24,14 +24,14 @@ function Modal(props) {
 	return (
 		<div
 			className={`modal ${
-				props.isModalOpen ? "modal--open" : "modal--close"
+				props.isModalOpen ? 'modal--open' : 'modal--close'
 			}`}
 		>
 			<aside
 				style={
 					props.isModalOpen
-						? { animationName: "sidebarSlideIn" }
-						: { animationName: "sidebarSlideOut" }
+						? { animationName: 'sidebarSlideIn' }
+						: { animationName: 'sidebarSlideOut' }
 				}
 			>
 				<div className="modal__top">
@@ -41,7 +41,7 @@ function Modal(props) {
 								<span
 									key={category}
 									className={`modal__categories__${
-										category.toLowerCase().split("/")[0]
+										category.toLowerCase().split('/')[0]
 									}`}
 								>
 									{category}
@@ -81,11 +81,11 @@ function Modal(props) {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{props.data.projectCategories.includes("WEB")
-							? "See live website"
-							: "Go to product page"}
+						{props.data.projectCategories.includes('WEB')
+							? 'See live website'
+							: 'Go to product page'}
 					</a>
-					{props.data.projectRepository !== "" ? (
+					{props.data.projectRepository !== '' ? (
 						<a
 							href={props.data.projectRepository}
 							target="_blank"
@@ -100,8 +100,8 @@ function Modal(props) {
 				className="modal__background"
 				style={
 					props.isModalOpen
-						? { animationName: "bgFadeIn" }
-						: { animationName: "bgFadeOut" }
+						? { animationName: 'bgFadeIn' }
+						: { animationName: 'bgFadeOut' }
 				}
 				onClick={() => props.closeModal()}
 			></div>
