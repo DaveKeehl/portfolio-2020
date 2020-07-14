@@ -40,6 +40,10 @@
 				font-family: 'Poppins';
 				font-size: 18px;
 
+				&:hover {
+					cursor: pointer;
+				}
+
 				a {
 					display: block;
 					margin: 5px 15px;
