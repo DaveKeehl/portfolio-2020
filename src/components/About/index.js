@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react'
 
-import Container from "../Container"
+import Container from '../Container'
 
-import json from "../../../static/content.json"
+import json from '../../../static/content.json'
 
 function About() {
 	return (
