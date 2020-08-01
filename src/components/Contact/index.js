@@ -29,7 +29,7 @@ function Contact() {
 				<form
 					// action="https://getform.io/f/f2091374-d0ae-4441-9404-31f6c2cd97da"
 					// method="POST"
-					name="contact"
+					name="Portfolio"
 					data-netlify="true"
 					data-netlify-honeypot="bot-field"
 					data-sal="fade"
