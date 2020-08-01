@@ -37,7 +37,7 @@ function Contact() {
 					data-sal-delay="200"
 					data-sal-easing="ease"
 				>
-					<input type="hidden" name="form-name" value="contact" />
+					<input type="hidden" name="form-name" value="Portfolio" />
 					<label htmlFor="name">Full name</label>
 					<input id="name" type="text" name="name" required />
 					<label htmlFor="email">Email</label>
