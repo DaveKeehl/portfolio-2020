@@ -1,31 +1,31 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
-import Container from "../Container"
-import Project from "./Project"
+import Container from '../Container'
+import Project from './Project'
 
-import json from "../../../static/content.json"
-import usigeek from "../../images/usigeek.svg"
-import stackandheap from "../../images/stackandheap.svg"
-import cucinanaturale from "../../images/cucinanaturale.svg"
-import swissapo from "../../images/swissapo.svg"
+import json from '../../../static/content.json'
+import usigeek from '../../images/usigeek.svg'
+import stackandheap from '../../images/stackandheap.svg'
+import cucinanaturale from '../../images/cucinanaturale.svg'
+import swissapo from '../../images/swissapo.svg'
 
 function Projects() {
-	const [filterCategory, setFilterCategory] = useState("ALL")
+	const [filterCategory, setFilterCategory] = useState('ALL')
 
 	const cards = json.projects
 		.filter(
 			(project) =>
-				filterCategory === "ALL" ||
+				filterCategory === 'ALL' ||
 				project.categories.includes(filterCategory)
 		)
 		.map((project, index) => {
 			const name = project.name
 				.trim()
-				.replace(/ /g, "")
-				.replace(/[-_]/g, "")
+				.replace(/ /g, '')
+				.replace(/[-_]/g, '')
 				.toLowerCase()
 			const image = { usigeek, stackandheap, cucinanaturale, swissapo }
-			if (project.visibility === "public") {
+			if (project.visibility === 'public') {
 				return (
 					<Project
 						key={index}
@@ -40,7 +40,7 @@ function Projects() {
 					/>
 				)
 			} else {
-				return
+				return null
 			}
 		})
 
@@ -56,7 +56,7 @@ function Projects() {
 					Projects.
 				</h1>
 				<div className="projects__filter">
-					{["ALL", "UI/UX", "WEB"].map((name, index) => (
+					{['ALL', 'UI/UX', 'WEB'].map((name, index) => (
 						<div
 							key={index}
 							onClick={() => setFilterCategory(name)}
@@ -67,8 +67,8 @@ function Projects() {
 						>
 							<button
 								className={`projects__filter__item projects__filter__item__${
-									name.toLowerCase().split("/")[0]
-								} ${filterCategory === name ? "active" : ""}`}
+									name.toLowerCase().split('/')[0]
+								} ${filterCategory === name ? 'active' : ''}`}
 							>
 								{name}
 							</button>

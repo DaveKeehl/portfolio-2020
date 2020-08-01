@@ -83,6 +83,15 @@
 			"repository": "https://github.com/DaveKeehl/rename-it",
 			"categories": ["UI/UX", "WEB"],
 			"visibility": ""
+		},
+		{
+			"name": "F1 Insights",
+			"description": "...",
+			"technologies": [],
+			"url": "",
+			"repository": "",
+			"categories": ["UI/UX", "WEB"],
+			"visibility": ""
 		}
 	]
 }

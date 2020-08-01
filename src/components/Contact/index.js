@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react'
 
-import plane from "../../images/plane.svg"
+import plane from '../../images/plane.svg'
 
-import Container from "../Container"
-import Footer from "../Footer"
+import Container from '../Container'
+import Footer from '../Footer'
 
 function Contact() {
 	return (
@@ -27,6 +27,8 @@ function Contact() {
 					data-sal-easing="ease"
 				/>
 				<form
+					name="contact"
+					netlify
 					action="https://getform.io/f/f2091374-d0ae-4441-9404-31f6c2cd97da"
 					method="POST"
 					data-sal="fade"
@@ -34,6 +36,7 @@ function Contact() {
 					data-sal-delay="200"
 					data-sal-easing="ease"
 				>
+					<input type="hidden" name="form-name" value="portfolio" />
 					<label htmlFor="name">Full name</label>
 					<input id="name" type="text" name="name" required />
 					<label htmlFor="email">Email</label>
