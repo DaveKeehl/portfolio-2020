@@ -27,16 +27,17 @@ function Contact() {
 					data-sal-easing="ease"
 				/>
 				<form
+					// action="https://getform.io/f/f2091374-d0ae-4441-9404-31f6c2cd97da"
+					// method="POST"
 					name="contact"
-					netlify
-					action="https://getform.io/f/f2091374-d0ae-4441-9404-31f6c2cd97da"
-					method="POST"
+					data-netlify="true"
+					data-netlify-honeypot="bot-field"
 					data-sal="fade"
 					data-sal-duration="800"
 					data-sal-delay="200"
 					data-sal-easing="ease"
 				>
-					<input type="hidden" name="form-name" value="portfolio" />
+					<input type="hidden" name="form-name" value="contact" />
 					<label htmlFor="name">Full name</label>
 					<input id="name" type="text" name="name" required />
 					<label htmlFor="email">Email</label>
